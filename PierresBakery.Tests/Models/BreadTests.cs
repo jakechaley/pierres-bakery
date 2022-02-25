@@ -22,5 +22,21 @@ namespace PierresBakeryBread.Tests
       string result = newBread.Price;
       Assert.AreEqual(price, result);
     }
+
+    [TestMethod]
+    public void SetDescription_SetDescription_String()
+    {
+      
+      string price = "$5.00";
+      Bread newBread = new Bread(price);
+
+      
+      string updatedPrice = "$4.00";
+      newBread.Price = updatedPrice;
+      string result = newBread.Price;
+
+      
+      Assert.AreEqual(updatedPrice, result);
+    }
   }
 }
