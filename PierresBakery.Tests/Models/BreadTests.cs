@@ -24,7 +24,7 @@ namespace PierresBakeryBread.Tests
     }
 
     [TestMethod]
-    public void SetDescription_SetDescription_String()
+    public void SetPrice_SetPrice_String()
     {
       
       string price = "$5.00";
