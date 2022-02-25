@@ -11,32 +11,16 @@ namespace PierresBakeryBread.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread("test");
+      Bread newBread = new Bread();
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
-    [TestMethod]
-    public void GetPrice_ReturnPrice_String()
-    {
-      string price = "$5.00";
-      Bread newBread = new Bread(price);
-      string result = newBread.Price;
-      Assert.AreEqual(price, result);
-    }
 
     [TestMethod]
-    public void SetPrice_SetPrice_String()
+    public void GetBreadInput_ReturnsBreadInput_Int()
     {
-      
-      string price = "$5.00";
-      Bread newBread = new Bread(price);
-
-      
-      string updatedPrice = "$4.00";
-      newBread.Price = updatedPrice;
-      string result = newBread.Price;
-
-      
-      Assert.AreEqual(updatedPrice, result);
+      int testBread = 5;
+      Bread newBread = new Bread(testBread);
+      int result = newBread.Quantity;
     }
   }
 }
