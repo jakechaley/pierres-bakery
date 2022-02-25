@@ -7,5 +7,10 @@ namespace PierresBakeryBread.Models
     {
       UserBread = breadInput;
     }
+
+    public int CalculateCost()
+    {
+      return 23;
+    }
   }
 }
