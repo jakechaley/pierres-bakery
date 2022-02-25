@@ -27,9 +27,9 @@ namespace PierresBakeryBread.Tests
     [TestMethod]
     public void CalculateCost_ReturnCost_int()
     {
-      int testBread = 5;
+      int testBread = 2;
+      int testCost = 10;
       Bread newBread = new Bread(testBread);
-      int testCost = 20;
       int result = newBread.CalculateCost();
       Assert.AreEqual(testCost, result);
 
