@@ -32,7 +32,16 @@ namespace PierresBakeryBread.Tests
       Bread newBread = new Bread(testBread);
       int result = newBread.CalculateCost();
       Assert.AreEqual(testCost, result);
+    }
 
+    [TestMethod]
+    public void CalculateCost_ReturnCostWithDeal_int()
+    {
+      int testBread = 6;
+      int testCost = 20;
+      Bread newBread = new Bread(testBread);
+      int result = newBread.CalculateCost();
+      Assert.AreEqual(testCost, result);
     }
   }
 }
