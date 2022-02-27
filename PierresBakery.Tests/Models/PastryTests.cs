@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PierresBakeryBread.Models;
+using PierresBakeryPastry.Models;
 
 [TestClass]
 public class PierresBakeryPastryTests
