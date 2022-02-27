@@ -29,5 +29,15 @@ public class PierresBakeryPastryTests
     int result = newPastry.CalculateCost();
     Assert.AreEqual(testPrice, result);
   }
+
+  [TestMethod]
+  public void CalculateCost_ReturnCostWithDeal_int()
+  {
+    int testPastryAmount = 7;
+    int testPrice = 12;
+    Pastry newPastry = new Pastry(testPastryAmount);
+    int result = newPastry.CalculateCost();
+    Assert.AreEqual(testPrice, result);
+  }
 }
 
