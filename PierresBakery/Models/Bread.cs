@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 namespace PierresBakeryBread.Models
 {
   public class Bread 
@@ -12,8 +14,16 @@ namespace PierresBakeryBread.Models
 
     public int CalculateCost()
     {
+      int total = 0;
+      for (int index = 1; index <= UserBread; index++)
+      {
+        if (index % 3 != 0)
+        {
+          total += Price;
+        }
+      }
 
-      return UserBread * Price;
+      return total;
     }
   }
 }
