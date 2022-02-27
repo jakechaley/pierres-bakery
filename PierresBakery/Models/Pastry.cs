@@ -9,6 +9,11 @@ namespace PierresBakeryBread.Models
       PastryAmount = pastryAmount;
       Price = 2;
     }
+
+    public int CalculateCost()
+    {
+      return 4;
+    }
   }
 }
 
