@@ -12,7 +12,8 @@ namespace PierresBakeryBread.Models
 
     public int CalculateCost()
     {
-      return 23;
+
+      return UserBread * Price;
     }
   }
 }
